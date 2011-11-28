@@ -1,0 +1,17 @@
+[core]
+	autocrlf = input
+	quotepath = false
+	excludesfile = ~/.gitignore
+[user]
+	name = Joni Kanerva
+	email = joni@devlab.fi
+[merge]
+	tool = opendiff
+[github]
+	user = jonikanerva
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
