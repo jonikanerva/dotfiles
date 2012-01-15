@@ -2,6 +2,7 @@
 	autocrlf = input
 	quotepath = false
 	excludesfile = ~/.gitignore
+	editor = mate -w
 [user]
 	name = Joni Kanerva
 	email = joni@devlab.fi
