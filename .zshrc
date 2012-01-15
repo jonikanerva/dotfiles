@@ -5,7 +5,7 @@ export EDITOR=mate
 
 # for oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="gozilla"
+ZSH_THEME="joni"
 DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git github osx)
