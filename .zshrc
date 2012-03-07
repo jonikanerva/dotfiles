@@ -12,7 +12,7 @@ plugins=(git github osx)
 source $ZSH/oh-my-zsh.sh
 
 # for homebrew/pear
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$HOME/.rvm/bin:$PATH
 
 # for mysql
 alias mysql-start='mysql.server start'
