@@ -2,6 +2,7 @@
 export HISTFILESIZE=10000
 export HISTCONTROL=ignoredups
 export EDITOR=mate
+export LANG=en_US.UTF-8
 
 # for oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
