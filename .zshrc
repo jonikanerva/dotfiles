@@ -15,7 +15,12 @@ source $ZSH/oh-my-zsh.sh
 # for homebrew/pear
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$HOME/.rvm/bin:$PATH
 
-# for mysql
+# for apache
+alias apache-start='sudo apachectl start'
+alias apache-stop='sudo apachectl stop'
+alias apache-restart='sudo apachectl restart'
+
+# for mysql/maria
 alias mysql-start='mysql.server start'
 alias mysql-stop='mysql.server stop'
 
