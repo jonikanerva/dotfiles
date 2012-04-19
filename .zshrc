@@ -12,6 +12,9 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git github osx)
 source $ZSH/oh-my-zsh.sh
 
+# for grc
+source "`brew --prefix grc`/etc/grc.bashrc"
+
 # for homebrew/pear
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$HOME/.rvm/bin:$PATH
 
