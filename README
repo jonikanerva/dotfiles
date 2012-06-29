@@ -1,5 +1,7 @@
 Install new machine:
 
+chsh -s /bin/zsh
+
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone git://github.com/jonikanerva/dotfiles.git ~/.dotfiles
 cp ~/.dotfiles/joni.zsh-theme ~/.oh-my-zsh/custom/
@@ -7,4 +9,4 @@ cp ~/.dotfiles/.zshrc ~/.zshrc
 cp ~/.dotfiles/.gitconfig ~/.gitconfig
 cp ~/.dotfiles/.gitignore ~/.gitignore
 cp ~/.dotfiles/.gemrc ~/.gemrc
-chsh -s /bin/zsh
+rm -f ~/.bash*
