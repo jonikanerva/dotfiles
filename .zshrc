@@ -42,12 +42,14 @@ if [[ `uname` == 'Darwin' ]]; then
 	alias s='cd ~/Dropbox/Sites'
 	alias top='top -u'
 	alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
+	alias nano='mate'
 fi
 
 # Linux
 if [[ `uname` == 'Linux' ]]; then
 	# editor
 	export EDITOR=nano
+	alias mate='nano'
 fi
 
 # generate password
