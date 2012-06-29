@@ -8,6 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="joni"
 DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
+DISABLE_UPDATE_PROMPT="true"
 plugins=(git github osx)
 source $ZSH/oh-my-zsh.sh
 
