@@ -1,16 +1,18 @@
 {
-	"auto_complete_commit_on_tab": true,
-	// Railscast theme from https://github.com/ryanb/textmate-themes
 	"color_scheme": "Packages/User/railscasts.tmTheme",
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Inconsolata-dz",
-	"font_size": 17,
+	"font_size": 16.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
-	"rulers": [70],
+	"rulers":
+	[
+		65
+	],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
 }
