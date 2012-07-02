@@ -1,7 +1,7 @@
 {
 	"auto_complete_commit_on_tab": true,
 	// Railscast theme from https://github.com/ryanb/textmate-themes
-	"color_scheme": "Packages/Color Scheme - Default/Railscasts.tmTheme",
+	"color_scheme": "Packages/User/railscasts.tmTheme",
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
