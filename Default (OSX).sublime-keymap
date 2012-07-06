@@ -1,5 +1,6 @@
 [
   { "keys": ["ctrl+shift+."], "command": "erb" },
   { "keys": ["super+shift+v"], "command": "paste" },
-  { "keys": ["super+v"], "command": "paste_and_indent" }
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["alt+space"], "command": "insert_snippet", "args": { "contents": " " } }
 ]
