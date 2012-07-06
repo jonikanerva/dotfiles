@@ -7,10 +7,9 @@
 	"font_size": 16.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
-	"rulers":
-	[
-		65
-	],
+	"hot_exit": false,
+	"remember_open_files": false,
+	"rulers": [65],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
