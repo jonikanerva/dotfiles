@@ -16,9 +16,12 @@ source $ZSH/oh-my-zsh.sh
 if [[ `uname` == 'Darwin' ]]; then
 	# editor
 	export EDITOR=mate
-	
+
 	# for grc
 	source "`brew --prefix grc`/etc/grc.bashrc"
+
+	# for rbenv
+	if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 	# for homebrew/pear
 	export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$HOME/.rvm/bin:$PATH
