@@ -43,7 +43,7 @@ if [[ `uname` == 'Darwin' ]]; then
 	alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 	alias pupe='cd ~/Dropbox/Sites/pupesoft'
 	alias s='cd ~/Dropbox/Sites'
-	alias top='top -u'
+	alias top='htop'
 	alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
 	alias nano='mate'
 fi
