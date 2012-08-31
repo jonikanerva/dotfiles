@@ -9,5 +9,6 @@ cp ~/.dotfiles/.zshrc ~/.zshrc
 cp ~/.dotfiles/.gitconfig ~/.gitconfig
 cp ~/.dotfiles/.gitignore ~/.gitignore
 cp ~/.dotfiles/.gemrc ~/.gemrc
+cp ~/.dotfiles/.irbrc ~/.irbrc
 cp -R ~/.dotfiles/.bundle ~/.bundle
 rm -f ~/.bash*
