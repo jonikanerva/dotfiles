@@ -3,6 +3,7 @@
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns": [".git", "vendor/bundle", "tmp"],
 	"font_face": "Inconsolata-dz",
 	"font_size": 16.0,
 	"highlight_line": true,
