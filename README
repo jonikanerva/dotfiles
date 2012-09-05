@@ -12,3 +12,11 @@ cp ~/.dotfiles/.gemrc ~/.gemrc
 cp ~/.dotfiles/.irbrc ~/.irbrc
 cp -R ~/.dotfiles/.bundle ~/.bundle
 rm -f ~/.bash*
+
+
+## Sublime Text 2 preferences
+
+cp ~/.dotfiles/Default\ \(OSX\).sublime-keymap ~/.dotfiles/Preferences.sublime-settings \
+~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
+wget https://raw.github.com/ryanb/textmate-themes/master/railscasts.tmTheme \
+-O ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/railscasts.tmTheme
