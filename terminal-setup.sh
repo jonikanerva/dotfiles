@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 echo
-echo "Setting up terminal"
+echo "Updating terminal settings"
 echo
 
 # Check we have Git
@@ -36,6 +36,7 @@ echo "Getting .rc files.."
 if [ -d ~/.oh-my-zsh ]; then
   cd ~/.oh-my-zsh/custom
   curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh-theme
+  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh
 fi
 
 cd ~
