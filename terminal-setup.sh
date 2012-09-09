@@ -46,6 +46,8 @@ curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.gitconfig
 curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.irbrc
 curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.pryrc
 curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.gemrc
+
+cd ~/.bundle
 curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.bundle/config
 
 # If we have Sublime Text
@@ -53,9 +55,10 @@ if [ -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User ]; then
   echo "Getting Sublime Text preferences.."
   cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
   curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/Preferences.sublime-settings
-  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/Default%20\(OSX\).sublime-keymap
+  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/Default\ \(OSX\).sublime-keymap
+  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/Markdown.sublime-settings
   curl --silent -O https://raw.github.com/ryanb/textmate-themes/master/railscasts.tmTheme
-  curl --silent -O https://raw.github.com/deplorableword/textmate-solarized/master/Solarized%20\(dark\).tmTheme
+  curl --silent -O https://raw.github.com/deplorableword/textmate-solarized/master/Solarized\ \(dark\).tmTheme
   curl --silent -O https://raw.github.com/chriskempson/tomorrow-theme/master/textmate/Tomorrow-Night-Eighties.tmTheme
 fi
 
