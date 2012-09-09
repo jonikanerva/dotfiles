@@ -10,7 +10,7 @@
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"remember_open_files": false,
-	"rulers": [65],
+	"rulers": [100],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
