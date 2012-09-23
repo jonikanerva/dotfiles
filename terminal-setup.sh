@@ -36,6 +36,7 @@ echo "Getting .rc files.."
 if [ -d ~/.oh-my-zsh ]; then
   cd ~/.oh-my-zsh/custom
   curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh-theme
+  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni-two.zsh-theme
   curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh
 fi
 
