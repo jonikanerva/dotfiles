@@ -9,7 +9,7 @@ ZSH_THEME="joni-two"
 DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UPDATE_PROMPT="true"
-plugins=(git github osx)
+plugins=(git github osx bundler gem heroku)
 source $ZSH/oh-my-zsh.sh
 
 # Mac
