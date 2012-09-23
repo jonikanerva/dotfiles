@@ -8,7 +8,7 @@ MACHINE="%{$fg[yellow]%}%m"
 DIR="%{$fg[green]%}%~%"
 
 PROMPT='$NAME %{$reset_color%}on $MACHINE %{$reset_color%}in $DIR $(git_prompt_check)$(git_prompt_status)
-%{$reset_color%}$ '
+%{$fg[cyan]%}$ %{$reset_color%}'
 RPROMPT=""
 
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[cyan]%} ✈"
