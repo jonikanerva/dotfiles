@@ -24,7 +24,7 @@ if [[ `uname` == 'Darwin' ]]; then
 	if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 	# for homebrew/pear
-	export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$HOME/.rvm/bin:$PATH
+	export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
 
 	# for apache
 	alias apache-start='sudo apachectl start'
@@ -60,8 +60,3 @@ alias gp='openssl rand -base64 21'
 
 # for printers
 alias p='clear;echo "Viimeset 10:";lpstat -W completed -o|tail -10;echo;echo "Jono nyt:";lpstat -o;echo;echo "Disabloidut printterit:";lpstat -p |grep dis;echo'
-
-# for rvm
-if [[ -f ~/.rvm/scripts/rvm ]]; then
-	source ~/.rvm/scripts/rvm
-fi
