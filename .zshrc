@@ -15,7 +15,7 @@ source $ZSH/oh-my-zsh.sh
 # Mac
 if [[ `uname` == 'Darwin' ]]; then
 	# editor
-	export EDITOR=mate
+	export EDITOR=subl
 
 	# for grc
 	source "`brew --prefix grc`/etc/grc.bashrc"
@@ -53,6 +53,7 @@ if [[ `uname` == 'Linux' ]]; then
 	# editor
 	export EDITOR=nano
 	alias mate='nano'
+	alias subl='nano'
 fi
 
 # generate password
