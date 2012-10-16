@@ -25,6 +25,7 @@ if [[ `uname` == 'Darwin' ]]; then
 
 	# for homebrew/pear
 	export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
+  alias bu='brew update && brew upgrade'
 
 	# for apache
 	alias apache-start='sudo apachectl start'
@@ -46,6 +47,7 @@ if [[ `uname` == 'Darwin' ]]; then
 	alias top='htop'
 	alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
 	alias nano='mate'
+	alias netlisteners='lsof -i -P | grep LISTEN'
 fi
 
 # Linux
