@@ -20,3 +20,5 @@
 	s = status
 	b = branch
 	l = log --graph --abbrev-commit --date=relative
+[difftool]
+	prompt = false
