@@ -4,7 +4,7 @@
     ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
     brew update
     brew doctor
-    brew install zsh git hub ssh-copy-id wget grc htop
+    brew install zsh git hub ssh-copy-id wget grc htop highlight
 
 ## Z shell
     chsh -s /bin/zsh
