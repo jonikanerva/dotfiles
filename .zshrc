@@ -27,6 +27,9 @@ if [[ `uname` == 'Darwin' ]]; then
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
   alias bu='brew update && brew upgrade && brew cleanup'
 
+  # for os x
+  alias osu='sudo softwareupdate -i -a'
+
   # for apache
   alias apache-start='sudo apachectl start'
   alias apache-stop='sudo apachectl stop'
