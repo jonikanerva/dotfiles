@@ -20,5 +20,9 @@
 	s = status
 	b = branch
 	l = log --graph --abbrev-commit --date=relative
+	nm = branch -r --no-merged
+	mm = branch -r --merged
 [difftool]
 	prompt = false
+[push]
+	default = simple
