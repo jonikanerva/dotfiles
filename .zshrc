@@ -55,6 +55,7 @@ if [[ `uname` == 'Darwin' ]]; then
   alias highlight_php='pbpaste | highlight --syntax=php --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
   alias highlight_sh='pbpaste | highlight --syntax=sh --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
   alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+  alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 fi
 
 # Linux
