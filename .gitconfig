@@ -24,5 +24,3 @@
 	mm = branch -r --merged
 [difftool]
 	prompt = false
-[push]
-	default = simple
