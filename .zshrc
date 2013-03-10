@@ -71,3 +71,6 @@ alias gp='openssl rand -base64 21'
 
 # for printers
 alias p='clear;echo "Viimeset 10:";lpstat -W completed -o|tail -10;echo;echo "Jono nyt:";lpstat -o;echo;echo "Disabloidut printterit:";lpstat -p |grep dis;echo'
+
+# misc
+alias pgrep='pgrep -lf'
