@@ -9,8 +9,15 @@ ZSH_THEME="joni-two"
 DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UPDATE_PROMPT="true"
-plugins=(git github osx bundler gem heroku)
+plugins=(git github osx bundler gem heroku zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
+
+# for rbenv
+if [[ -d "${HOME}/.rbenv/bin" ]]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+fi
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Mac
 if [[ `uname` == 'Darwin' ]]; then
@@ -19,9 +26,6 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # for grc
   source "`brew --prefix grc`/etc/grc.bashrc"
-
-  # for rbenv
-  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
   # for homebrew/pear
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
