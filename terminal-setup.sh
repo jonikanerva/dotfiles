@@ -29,16 +29,35 @@ fi
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "Getting oh-my-zsh.."
   git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh --quiet
+
+  mkdir -p ~/.oh-my-zsh/custom/plugins
+  cd ~/.oh-my-zsh/custom/plugins
+  git clone git://github.com/zsh-users/zsh-syntax-highlighting.git --quiet
 fi
 
-echo "Getting .rc files.."
-
 if [ -d ~/.oh-my-zsh ]; then
+  echo "Update oh-my-zsh custom.."
   cd ~/.oh-my-zsh/custom
   curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh-theme
   curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni-two.zsh-theme
   curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh
 fi
+
+if [ -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
+  echo "Update zsh syntax highlighting.."
+  cd ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+  git pull
+fi
+
+if [ -d ~/.rbenv/bin ]; then
+  echo "Update rbenv.."
+  cd ~/.rbenv
+  git pull
+  cd ~/.rbenv/plugins/ruby-build
+  git pull
+fi
+
+echo "Getting .rc files.."
 
 cd ~
 curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.zshrc
@@ -63,6 +82,5 @@ if [ -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User ]; then
   curl --silent -O https://raw.github.com/chriskempson/tomorrow-theme/master/textmate/Tomorrow-Night-Eighties.tmTheme
 fi
 
-echo
 echo "Done."
 echo
