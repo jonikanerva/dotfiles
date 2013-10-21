@@ -15,7 +15,7 @@ source $ZSH/oh-my-zsh.sh
 # for rbenv
 if [[ -d "${HOME}/.rbenv/bin" ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
-  alias rbenv-update='cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd'
+  alias rbenv-pull='cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd'
 fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -30,7 +30,7 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # for homebrew/pear
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
-  alias bu='brew update && brew upgrade && brew cleanup'
+  alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
 
   # for os x
   alias osu='sudo softwareupdate -i -a'
@@ -59,8 +59,10 @@ if [[ `uname` == 'Darwin' ]]; then
   alias highlight_rb='pbpaste | highlight --syntax=rb --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
   alias highlight_php='pbpaste | highlight --syntax=php --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
   alias highlight_sh='pbpaste | highlight --syntax=sh --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
+	alias highlight_sql='pbpaste | highlight --syntax=sql --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
   alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
   alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+  alias delete_spotify_cache='rm -rf ~/Library/Caches/com.spotify.client'
 fi
 
 # Linux
