@@ -19,9 +19,16 @@
 [alias]
 	s = status
 	b = branch
+	d = difftool
 	l = log --graph --abbrev-commit --date=relative
 	pb = remote prune origin
 	nm = branch -r --no-merged
 	mm = branch -r --merged
 [difftool]
 	prompt = false
+[push]
+	default = simple
+[mergetool]
+	keepBackup = false
+[credential]
+	helper = osxkeychain
