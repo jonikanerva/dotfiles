@@ -3,6 +3,14 @@ export HISTFILESIZE=10000
 export HISTCONTROL=ignoredups
 export LANG=en_US.UTF-8
 
+# for rbenv
+if [[ -d "${HOME}/.rbenv/bin" ]]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  alias rbenv-pull='cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd'
+fi
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # for oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="joni-two"
@@ -11,14 +19,6 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UPDATE_PROMPT="true"
 plugins=(git github osx bundler gem heroku zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
-
-# for rbenv
-if [[ -d "${HOME}/.rbenv/bin" ]]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  alias rbenv-pull='cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd'
-fi
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Mac
 if [[ `uname` == 'Darwin' ]]; then
