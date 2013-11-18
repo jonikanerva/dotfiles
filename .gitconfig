@@ -20,6 +20,7 @@
 	s = status
 	b = branch
 	d = difftool
+	co = checkout
 	l = log --graph --abbrev-commit --date=relative
 	pb = remote prune origin
 	nm = branch -r --no-merged
