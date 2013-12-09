@@ -52,6 +52,7 @@ if [[ `uname` == 'Darwin' ]]; then
   alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
   alias pupe='cd ~/Dropbox/Sites/pupesoft'
   alias s='cd ~/Dropbox/Sites'
+  alias r='cd ~/Dropbox/Sites/ruby'
   alias top='htop'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias nano='mate'
@@ -81,3 +82,6 @@ alias p='clear;echo "Viimeset 10:";lpstat -W completed -o|tail -10;echo;echo "Jo
 
 # misc
 alias pgrep='pgrep -lf'
+
+# added by travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
