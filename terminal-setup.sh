@@ -25,6 +25,20 @@ if [ ! -d ~/.bundle ]; then
   mkdir ~/.bundle
 fi
 
+MATE="/Applications/TextMate.app/Contents/SharedSupport/Support/bin/mate"
+MATE_BIN="/usr/local/bin/mate"
+
+SUBL="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+SUBL_BIN="/usr/local/bin/subli"
+
+if [[ -f "${SUBL}" && ! -f "${SUBL_BIN}" ]]; then
+  ln -s "${SUBL}" "${SUBL_BIN}"
+fi
+
+if [[ -f "${MATE}" && ! -f "${MATE_BIN}" ]]; then
+  ln -s "${MATE}" "${MATE_BIN}"
+fi
+
 # Fetch oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "Getting oh-my-zsh.."
