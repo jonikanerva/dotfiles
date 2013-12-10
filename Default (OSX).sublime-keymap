@@ -6,6 +6,6 @@
   { "keys": ["alt+shift+space"], "command": "insert_snippet", "args": { "contents": " " } },
   { "keys": ["ctrl+tab"], "command": "next_view" },
   { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-  { "keys": ["shift+f1"], "command": "fold" },
-  { "keys": ["f1"], "command": "unfold" }
+  { "keys": ["f1"], "command": "fold" },
+  { "keys": ["f2"], "command": "unfold" }
 ]
