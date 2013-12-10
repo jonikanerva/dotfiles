@@ -29,7 +29,7 @@ MATE="/Applications/TextMate.app/Contents/SharedSupport/Support/bin/mate"
 MATE_BIN="/usr/local/bin/mate"
 
 SUBL="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
-SUBL_BIN="/usr/local/bin/subli"
+SUBL_BIN="/usr/local/bin/subl"
 
 if [[ -f "${SUBL}" && ! -f "${SUBL_BIN}" ]]; then
   ln -s "${SUBL}" "${SUBL_BIN}"
