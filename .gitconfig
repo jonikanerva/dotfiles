@@ -2,12 +2,18 @@
 	autocrlf = input
 	quotepath = false
 	excludesfile = ~/.gitignore
-	editor = mate -w
+	editor = subl -n -w
 [user]
 	name = Joni Kanerva
 	email = joni@devlab.fi
 [merge]
-	tool = opendiff
+	tool = ksdiff
+[diff]
+	tool = ksdiff
+[mergetool "ksdiff"]
+	cmd = ksdiff "$LOCAL" "$REMOTE"
+[difftool "ksdiff"]
+	cmd = ksdiff "$LOCAL" "$REMOTE"
 [github]
 	user = jonikanerva
 [color]
