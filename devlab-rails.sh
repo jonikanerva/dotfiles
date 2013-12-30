@@ -21,7 +21,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 alias rbenv-update="cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd"
 ' >> ~/.bash_profile
 
-exec /bin/bash -l
-
 echo "OK!"
 echo
