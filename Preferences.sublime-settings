@@ -1,18 +1,30 @@
 {
 	"color_scheme": "Packages/User/railscasts.tmTheme",
+	"create_window_at_startup": false,
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
-	"folder_exclude_patterns": [".git", "vendor/bundle", "tmp"],
+	"folder_exclude_patterns":
+	[
+		".git",
+		"vendor/bundle",
+		"tmp"
+	],
 	"font_face": "Inconsolata-dz",
 	"font_size": 16.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
-	"ignored_packages": ["Vintage"],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"preview_on_click": true,
 	"remember_open_files": false,
-	"rulers": [100],
+	"rulers":
+	[
+		100
+	],
 	"scroll_past_end": true,
 	"show_full_path": true,
 	"tab_size": 2,
