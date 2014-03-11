@@ -49,7 +49,6 @@ if [[ `uname` == 'Darwin' ]]; then
   alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
   # for misc
-  alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
   alias pupe='cd ~/Dropbox/Sites/pupesoft'
   alias s='cd ~/Dropbox/Sites'
   alias r='cd ~/Dropbox/Sites/ruby'
