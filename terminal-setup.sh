@@ -28,7 +28,7 @@ fi
 MATE="/Applications/TextMate.app/Contents/SharedSupport/Support/bin/mate"
 MATE_BIN="/usr/local/bin/mate"
 
-SUBL="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+SUBL="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 SUBL_BIN="/usr/local/bin/subl"
 
 if [[ -f "${SUBL}" && ! -f "${SUBL_BIN}" ]]; then
@@ -85,10 +85,10 @@ cd ~/.bundle
 curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.bundle/config
 
 # If we have Sublime Text
-if [ -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User ]; then
+if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ]; then
   echo "Getting Sublime Text preferences.."
 
-  cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/Preferences.sublime-settings"
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/Default%20(OSX).sublime-keymap"
