@@ -1,4 +1,8 @@
 {
   "color_scheme": "Packages/User/Tomorrow-Night-Eighties.tmTheme",
-  "tab_size": 4
+  "tab_size": 4,
+  "rulers":
+  [
+    125
+  ]
 }
