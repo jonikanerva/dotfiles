@@ -1,5 +1,5 @@
 [
-  { "keys": ["ctrl+shift+."], "command": "erb" },
+  // Sublime Text keybindings
   { "keys": ["super+shift+v"], "command": "paste" },
   { "keys": ["super+v"], "command": "paste_and_indent" },
   { "keys": ["alt+space"], "command": "insert_snippet", "args": { "contents": " " } },
@@ -8,6 +8,11 @@
   { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
   { "keys": ["f1"], "command": "fold" },
   { "keys": ["f2"], "command": "unfold" },
+
+  // SublimeERB keybindings
+  { "keys": ["ctrl+shift+."], "command": "erb" },
+
+  // RubyTest keybindings
   { "keys": ["super+r"], "command": "run_single_ruby_test",
     "context": [ { "key": "selector", "operator": "equal",
                    "operand": "source.ruby, source.rspec, text.gherkin.feature"
@@ -17,5 +22,8 @@
     "context": [ { "key": "selector", "operator": "equal",
                    "operand": "source.ruby, source.rspec, text.gherkin.feature"
                } ]
-  }
+  },
+
+  // MacTerminal keybindings
+  { "keys": ["ctrl+t"], "command": "open_mac_terminal" }
 ]
