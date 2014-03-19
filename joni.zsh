@@ -1,5 +1,9 @@
 #!/bin/sh
 
+function precmd {
+  printf "\033]0;%s@%s:%s\007" "${USER}" "`hostname -s`" "${PWD/#$HOME/~}"
+}
+
 function _current_time() {
   echo $(($(date +%s) / 60 / 60 / 24))
 }
