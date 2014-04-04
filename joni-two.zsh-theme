@@ -2,6 +2,10 @@ function git_prompt_check() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   echo "%{$reset_color%} at %{$fg[magenta]%}${ref#refs/heads/}"
 
+  if [ ! -f ".git/FETCH_HEAD" ]; then
+    return
+  fi
+
   # On mac do git fetch automatically if not done in the last 24h
   if [[ `uname` == 'Darwin' ]]; then
     last_fetch=$(stat -f "%Sm" -t "%s" .git/FETCH_HEAD)
