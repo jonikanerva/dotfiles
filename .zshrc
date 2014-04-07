@@ -51,7 +51,7 @@ if [[ `uname` == 'Darwin' ]]; then
   # for misc
   alias pupe='cd ~/Dropbox/Sites/pupesoft'
   alias s='cd ~/Dropbox/Sites'
-  alias r='cd ~/Dropbox/Sites/ruby'
+  alias r='cd ~/Sites/ruby'
   alias top='htop'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias nano='mate'
