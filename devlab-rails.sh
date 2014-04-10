@@ -18,7 +18,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Add alias for updating rbenv
-alias rbenv-update="cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd"
+alias rbenv-pull="cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd ~/.rbenv/plugins/rbenv-gem-rehash && git pull && cd"
 ' >> ~/.bash_profile
 
 echo "OK!"

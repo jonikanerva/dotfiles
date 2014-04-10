@@ -6,7 +6,7 @@ export LANG=en_US.UTF-8
 # for rbenv
 if [[ -d "${HOME}/.rbenv/bin" ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
-  alias rbenv-pull='cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd'
+  alias rbenv-pull='cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd ~/.rbenv/plugins/rbenv-gem-rehash && git pull && cd'
 fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
