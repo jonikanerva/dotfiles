@@ -92,6 +92,7 @@ if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ]; then
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/Preferences.sublime-settings"
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/Default%20(OSX).sublime-keymap"
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/Markdown.sublime-settings"
+  curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/Ruby.sublime-settings"
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/RubyTest.sublime-settings"
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/MacTerminal.sublime-settings"
   curl --silent -O "https://raw.github.com/jonikanerva/dotfiles/master/PHP.sublime-settings"
