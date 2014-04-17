@@ -4,6 +4,10 @@
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns": [
+		".DS_Store",
+		".keep",
+	],
 	"folder_exclude_patterns":
 	[
 		".git",
