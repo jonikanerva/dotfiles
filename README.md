@@ -4,7 +4,7 @@
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
     brew update
     brew doctor
-    brew install zsh git hub ssh-copy-id wget grc htop highlight
+    brew install zsh git hub ssh-copy-id wget grc
 
 ## Z shell
     chsh -s /bin/zsh
