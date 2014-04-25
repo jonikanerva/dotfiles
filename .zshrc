@@ -31,7 +31,7 @@ if [[ `uname` == 'Darwin' ]]; then
   # for homebrew/pear
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
   alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
-  alias gu='gem update --system; gem update && gem cleanup'
+  alias gu='for ruby in $(rbenv versions --bare); do rbenv shell ${ruby} && echo "Updating Ruby ${ruby}.." && gem update --system -N; gem update -N && gem cleanup; unset RBENV_VERSION; echo; done;'
 
   # for os x
   alias osu='sudo softwareupdate -i -a'
