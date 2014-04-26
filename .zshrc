@@ -14,10 +14,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # for oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="joni-two"
-DISABLE_AUTO_TITLE="true"
-COMPLETION_WAITING_DOTS="true"
-DISABLE_UPDATE_PROMPT="true"
-plugins=(git github osx bundler gem heroku zsh-syntax-highlighting)
+plugins=(heroku zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Mac
@@ -82,6 +79,9 @@ alias p='clear;echo "Viimeset 10:";lpstat -W completed -o|tail -10;echo;echo "Jo
 
 # misc
 alias pgrep='pgrep -lf'
+
+# git
+alias g='git'
 
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
