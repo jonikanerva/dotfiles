@@ -30,9 +30,6 @@ if [[ `uname` == 'Darwin' ]]; then
   alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
   alias gu='for ruby in $(rbenv versions --bare); do rbenv shell ${ruby} && echo "Updating Ruby ${ruby}.." && gem update --system -N; gem update -N && gem cleanup; unset RBENV_VERSION; echo; done;'
 
-  # for os x
-  alias osu='sudo softwareupdate -i -a'
-
   # for apache
   alias apache-start='sudo apachectl start'
   alias apache-stop='sudo apachectl stop'
@@ -47,19 +44,11 @@ if [[ `uname` == 'Darwin' ]]; then
   alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
   # for misc
-  alias pupe='cd ~/Dropbox/Sites/pupesoft'
   alias s='cd ~/Dropbox/Sites'
   alias r='cd ~/Sites/ruby'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias nano='subl'
   alias netlisteners='lsof -i -P | grep LISTEN'
-  alias highlight_rb='pbpaste | highlight --syntax=rb --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
-  alias highlight_php='pbpaste | highlight --syntax=php --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
-  alias highlight_sh='pbpaste | highlight --syntax=sh --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
-	alias highlight_sql='pbpaste | highlight --syntax=sql --font=Inconsolata-dz --font-size=24 --style=dante --out-format=rtf | pbcopy'
-  alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
-  alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
-  alias delete_spotify_cache='rm -rf ~/Library/Caches/com.spotify.client'
 fi
 
 # Linux
