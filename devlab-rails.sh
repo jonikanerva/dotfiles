@@ -7,8 +7,8 @@ if [ ! -d ~/.bundle ]; then
   mkdir ~/.bundle
 fi
 
-curl --silent -o ~/.gemrc          https://raw.github.com/jonikanerva/dotfiles/master/.gemrc
-curl --silent -o ~/.bundle/config  https://raw.github.com/jonikanerva/dotfiles/master/.bundle/config
+curl --silent -o ~/.gemrc          https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gemrc
+curl --silent -o ~/.bundle/config  https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.bundle/config
 
 echo '
 # Add rbenv to path

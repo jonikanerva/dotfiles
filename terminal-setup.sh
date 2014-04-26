@@ -52,9 +52,9 @@ fi
 if [ -d ~/.oh-my-zsh ]; then
   echo "Update oh-my-zsh custom.."
   cd ~/.oh-my-zsh/custom
-  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh-theme
-  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni-two.zsh-theme
-  curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/joni.zsh
+  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni.zsh-theme
+  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni-two.zsh-theme
+  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni.zsh
 fi
 
 if [ -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
@@ -73,15 +73,15 @@ fi
 echo "Getting .rc files.."
 
 cd ~
-curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.zshrc
-curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.gitignore
-curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.gitconfig
-curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.irbrc
-curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.pryrc
-curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.gemrc
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.zshrc
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitignore
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitconfig
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.irbrc
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.pryrc
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gemrc
 
 cd ~/.bundle
-curl --silent -O https://raw.github.com/jonikanerva/dotfiles/master/.bundle/config
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.bundle/config
 
 # If we have Sublime Text
 if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ]; then

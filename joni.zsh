@@ -20,7 +20,7 @@ else
   TIME_DIFF=$(($CURRENT_TIME-$UPDATE_TIME))
 
   if [ $TIME_DIFF -gt 13 ]; then
-    curl --silent -L https://raw.github.com/jonikanerva/dotfiles/master/terminal-setup.sh | bash
+    curl --silent -L https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh | bash
     _update_time
   fi
 fi
