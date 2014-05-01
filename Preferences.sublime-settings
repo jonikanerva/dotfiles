@@ -4,7 +4,8 @@
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns": [
+	"file_exclude_patterns":
+	[
 		".DS_Store",
 		".keep",
 		"*.sqlite3"
@@ -35,5 +36,5 @@
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+	"word_wrap": false
 }
