@@ -7,13 +7,14 @@
 	name = Joni Kanerva
 	email = joni@devlab.fi
 [merge]
-	tool = ksdiff
+	tool = Kaleidoscope
 [diff]
-	tool = ksdiff
-[mergetool "ksdiff"]
-	cmd = ksdiff "$LOCAL" "$REMOTE"
-[difftool "ksdiff"]
-	cmd = ksdiff "$LOCAL" "$REMOTE"
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustexitcode = true
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [github]
 	user = jonikanerva
 [color]
@@ -38,5 +39,6 @@
 	default = simple
 [mergetool]
 	keepBackup = false
+	prompt = false
 [credential]
 	helper = osxkeychain
