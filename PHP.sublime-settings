@@ -3,5 +3,6 @@
   "extensions":
   [
    "inc"
-  ]
+  ],
+  "default_encoding": "Western (Windows 1252)"
 }
