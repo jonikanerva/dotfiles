@@ -25,6 +25,9 @@ if [[ `uname` == 'Darwin' ]]; then
   # for grc
   source "`brew --prefix grc`/etc/grc.bashrc"
 
+  # for ssh-agent (ssh-add -K ~/.ssh/id_rsa)
+  eval $(ssh-agent)
+
   # for homebrew/pear
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
   alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
