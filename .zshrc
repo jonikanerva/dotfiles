@@ -26,7 +26,7 @@ if [[ `uname` == 'Darwin' ]]; then
   source "`brew --prefix grc`/etc/grc.bashrc"
 
   # for ssh-agent (ssh-add -K ~/.ssh/id_rsa)
-  eval $(ssh-agent)
+  eval $(ssh-agent) > /dev/null
 
   # for homebrew/pear
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
