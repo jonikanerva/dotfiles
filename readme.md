@@ -15,4 +15,5 @@
 ## Rbenv + gems
     rbenv install 2.1.2
     rbenv global 2.1.2
+    gem update --system
     gem install bundler chef rails travis travis-lint
