@@ -3,6 +3,7 @@
 	quotepath = false
 	excludesfile = ~/.gitignore
 	editor = subl -n -w
+	preloadindex = true
 [user]
 	name = Joni Kanerva
 	email = joni@devlab.fi
