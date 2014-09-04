@@ -3,6 +3,8 @@
   "tab_size": 4,
   "rulers":
   [
-    125
-  ]
+    78
+  ],
+  "word_wrap": true,
+  "wrap_width": 78
 }
