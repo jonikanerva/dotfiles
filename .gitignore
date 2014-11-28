@@ -1,2 +1,7 @@
 .DS_Store
 vendor/bundle
+
+# ctags
+.gemtags
+.tags
+.tags_sorted_by_file

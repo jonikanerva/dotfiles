@@ -25,5 +25,19 @@
   },
 
   // MacTerminal keybindings
-  { "keys": ["ctrl+t"], "command": "open_mac_terminal" }
+  { "keys": ["ctrl+t"], "command": "open_mac_terminal" },
+
+  // Ctag bindings
+  {
+    "command": "navigate_to_definition",
+    "keys": ["ctrl+h"]
+  },
+  {
+    "command": "search_for_definition",
+    "keys": ["ctrl+shift+h"]
+  },
+  {
+    "command": "rebuild_tags",
+    "keys": ["ctrl+r"]
+  }
 ]

@@ -3,7 +3,7 @@
 ## Homebrew
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/homebrew/go/install)"
     brew doctor
-    brew install zsh git hub ssh-copy-id wget grc rbenv ruby-build rbenv-gem-rehash rbenv-bundler
+    brew install zsh git hub ssh-copy-id wget grc rbenv ruby-build rbenv-gem-rehash rbenv-bundler ctags
 
 ## Z shell
     chsh -s /bin/zsh
