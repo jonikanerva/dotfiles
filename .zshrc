@@ -76,7 +76,7 @@ alias e=$EDITOR
 # git
 alias g='git'
 alias git-cleanup='find ~ -path "*/.git" -not -path "*/vendor/bundle/*" -type d -exec sh -c "cd {} && cd .. && git config --get remote.origin.url &> /dev/null && pwd && git fetch origin && git remote prune origin && git gc && cd && echo" \;'
-alias git-remove-all-local-branches='git branch | grep -v master | xargs git branch -d'
+alias git-remove-all-local-branches='git branch | grep -v master | grep -v "$(git symbolic-ref --short -q HEAD)" | xargs git branch -d'
 
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
