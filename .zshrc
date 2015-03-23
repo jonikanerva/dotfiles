@@ -72,6 +72,7 @@ alias p='clear;echo "Viimeset 10:";lpstat -W completed -o|tail -10;echo;echo "Jo
 # misc
 alias pgrep='pgrep -lf'
 alias e=$EDITOR
+alias migrate='echo "Development..." && bundle exec rake db:migrate RAILS_ENV=development && echo "Test..." && bundle exec rake db:migrate RAILS_ENV=test'
 
 # git
 alias g='git'
