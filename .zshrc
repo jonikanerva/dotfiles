@@ -59,6 +59,10 @@ if [[ `uname` == 'Darwin' ]]; then
   alias l-staging='heroku logs --tail --app ahkio-staging'
   alias l-development='tail -f log/development.log'
   alias l-test='tail -f log/test.log'
+
+  # for redis
+  alias redis-start='redis-server /usr/local/etc/redis.conf'
+  alias redis-stop='kill $(cat /usr/local/var/run/redis.pid)'
 fi
 
 # Linux
