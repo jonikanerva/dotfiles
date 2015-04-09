@@ -49,6 +49,7 @@ if [[ `uname` == 'Darwin' ]]; then
   # for misc
   alias s='cd ~/Dropbox/Sites'
   alias r='cd ~/Sites/ruby'
+  alias a='cd ~/Sites/ruby/ahkio'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias nano='subl'
   alias netlisteners='lsof -i -P | grep LISTEN'
