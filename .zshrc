@@ -47,7 +47,7 @@ if [[ `uname` == 'Darwin' ]]; then
   alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
   # for misc
-  alias s='cd ~/Dropbox/Sites'
+  alias p='cd ~/Sites/php'
   alias r='cd ~/Sites/ruby'
   alias a='cd ~/Sites/ruby/ahkio'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
@@ -72,14 +72,14 @@ if [[ `uname` == 'Linux' ]]; then
   export EDITOR=nano
   alias mate='nano'
   alias subl='nano'
+
+  # for printers
+  alias p='clear;echo "Viimeset 10:";lpstat -W completed -o|tail -10;echo;echo "Jono nyt:";lpstat -o;echo;echo "Disabloidut printterit:";lpstat -p |grep dis;echo'
 fi
 
 # generate password
 alias gp='openssl rand -base64 21'
 alias secret='ruby -e "require \"securerandom\"; puts SecureRandom.hex(64)"'
-
-# for printers
-alias p='clear;echo "Viimeset 10:";lpstat -W completed -o|tail -10;echo;echo "Jono nyt:";lpstat -o;echo;echo "Disabloidut printterit:";lpstat -p |grep dis;echo'
 
 # misc
 alias pgrep='pgrep -lf'
