@@ -47,9 +47,8 @@ if [[ `uname` == 'Darwin' ]]; then
   alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
   # for misc
-  alias p='cd ~/Sites/php'
-  alias r='cd ~/Sites/ruby'
-  alias a='cd ~/Sites/ruby/ahkio'
+  alias s='cd ~/Sites'
+  alias a='cd ~/Sites/ahkio'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias nano='subl'
   alias netlisteners='lsof -i -P | grep LISTEN'
