@@ -9,7 +9,7 @@ if [[ -d "${HOME}/.rbenv/bin" ]]; then
   alias rbenv-pull='cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd ~/.rbenv/plugins/rbenv-gem-rehash && git pull && cd'
 fi
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # for oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
