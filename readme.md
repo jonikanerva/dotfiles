@@ -13,8 +13,9 @@
     curl --silent -L https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh | bash
 
 ## Rbenv + gems
-    rbenv install 2.1.5
-    rbenv global 2.1.5
+    rbenv install 2.2.2
+    rbenv global 2.2.2
     gem update --system
-    yes | gem update
+    gem update
+    gem cleanup
     gem install bundler chef rails travis travis-lint
