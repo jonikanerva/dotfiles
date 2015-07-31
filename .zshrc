@@ -63,6 +63,9 @@ if [[ `uname` == 'Darwin' ]]; then
   # for redis
   alias redis-start='redis-server /usr/local/etc/redis.conf'
   alias redis-stop='kill $(cat /usr/local/var/run/redis.pid)'
+
+  # for php
+  alias php-server='php -S localhost:3001'
 fi
 
 # Linux
