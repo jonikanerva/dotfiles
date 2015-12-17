@@ -4,6 +4,7 @@
 	excludesfile = ~/.gitignore
 	editor = subl -n -w
 	preloadindex = true
+	precomposeunicode = false
 [user]
 	name = Joni Kanerva
 	email = joni@devlab.fi
