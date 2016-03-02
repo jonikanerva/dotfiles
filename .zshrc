@@ -47,6 +47,7 @@ if [[ `uname` == 'Darwin' ]]; then
   alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
   # for misc
+  export CHEF_SECRET_DIR=/Users/joni/Dropbox/Documents/chef
   alias s='cd ~/Sites'
   alias a='cd ~/Sites/ahkio'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
@@ -86,6 +87,7 @@ alias secret='ruby -e "require \"securerandom\"; puts SecureRandom.hex(64)"'
 # misc
 alias pgrep='pgrep -lf'
 alias e=$EDITOR
+alias be="bundle exec"
 
 # git
 alias g='git'
