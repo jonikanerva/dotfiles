@@ -16,6 +16,9 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="joni-two"
 plugins=(heroku zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
+DISABLE_AUTO_TITLE="true"
+COMPLETION_WAITING_DOTS="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Mac
 if [[ `uname` == 'Darwin' ]]; then
