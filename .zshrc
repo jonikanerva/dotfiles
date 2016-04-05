@@ -31,6 +31,15 @@ if [[ `uname` == 'Darwin' ]]; then
   # for ssh-agent (ssh-add -K ~/.ssh/id_rsa)
   eval $(ssh-agent) > /dev/null
 
+  # for gpg-agent
+  [ -f ~/.gnupg/.gpg-agent-info ] && source ~/.gnupg/.gpg-agent-info
+
+  if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+    export GPG_AGENT_INFO
+  else
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info) > /dev/null
+  fi
+
   # for homebrew/pear
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
   alias bu='brew update && brew upgrade --all && brew cleanup && brew doctor'
