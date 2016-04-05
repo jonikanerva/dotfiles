@@ -49,6 +49,10 @@ if [[ `uname` == 'Darwin' ]]; then
   alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
   alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
+  # for ftp
+  alias ftp-start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'
+  alias ftp-stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
+
   # for misc
   export CHEF_SECRET_DIR=/Users/joni/Dropbox/Documents/chef
   alias s='cd ~/Sites'
