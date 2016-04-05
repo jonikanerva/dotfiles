@@ -8,6 +8,7 @@
 [user]
 	name = Joni Kanerva
 	email = joni@devlab.fi
+	signingkey = 9BAB9F57
 [merge]
 	tool = Kaleidoscope
 [diff]
@@ -44,3 +45,5 @@
 	prompt = false
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgsign = true
