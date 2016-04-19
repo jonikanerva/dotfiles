@@ -1,5 +1,6 @@
 {
-  "color_scheme": "Packages/User/Solarized (dark).tmTheme",
+  // "color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+  "color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
   "extensions":
   [
    "inc"

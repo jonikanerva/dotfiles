@@ -1,5 +1,6 @@
 {
-	"color_scheme": "Packages/User/railscasts.tmTheme",
+	// "color_scheme": "Packages/User/railscasts.tmTheme",
+	"color_scheme": "Packages/Railscasts Extended/Railscasts Extended.tmTheme",
 	"create_window_at_startup": false,
 	"default_line_ending": "unix",
 	"drag_text": false,
