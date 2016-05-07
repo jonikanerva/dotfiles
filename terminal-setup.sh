@@ -97,6 +97,7 @@ if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ]; then
   curl --silent -O "https://raw.githubusercontent.com/jonikanerva/dotfiles/master/MacTerminal.sublime-settings"
   curl --silent -O "https://raw.githubusercontent.com/jonikanerva/dotfiles/master/PHP.sublime-settings"
   curl --silent -O "https://raw.githubusercontent.com/jonikanerva/dotfiles/master/Git%20Commit%20Message.sublime-settings"
+  curl --silent -O "https://raw.githubusercontent.com/jonikanerva/dotfiles/master/RuboCop.sublime-settings"
   curl --silent -O "https://raw.githubusercontent.com/ryanb/textmate-themes/master/railscasts.tmTheme"
   curl --silent -O "https://raw.githubusercontent.com/deplorableword/textmate-solarized/master/Solarized%20(dark).tmTheme"
   curl --silent -O "https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/textmate/Tomorrow-Night-Eighties.tmTheme"
