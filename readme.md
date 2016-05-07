@@ -18,4 +18,4 @@
     gem update --system
     gem update
     gem cleanup
-    gem install bundler chef rails travis travis-lint
+    gem install bundler chef rails rubocop
