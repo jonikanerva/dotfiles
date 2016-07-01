@@ -13,8 +13,9 @@
     curl --silent -L https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh | bash
 
 ## Rbenv + gems
-    rbenv install 2.2.3
-    rbenv global 2.2.3
+    rbenv install --list | grep -E "^ +\d" | tail -10
+    rbenv install 2.3.1
+    rbenv global 2.3.1
     gem update --system
     gem update
     gem cleanup
