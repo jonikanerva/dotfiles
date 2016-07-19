@@ -28,9 +28,6 @@ if [[ `uname` == 'Darwin' ]]; then
   # for grc
   source "`brew --prefix grc`/etc/grc.bashrc"
 
-  # for ssh-agent (ssh-add -K ~/.ssh/id_rsa)
-  eval $(ssh-agent) > /dev/null
-
   # for gpg-agent
   if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
     source ~/.gnupg/.gpg-agent-info
