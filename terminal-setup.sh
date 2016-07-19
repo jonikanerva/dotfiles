@@ -25,6 +25,11 @@ if [ ! -d ~/.bundle ]; then
   mkdir ~/.bundle
 fi
 
+# Check .gnupg dir
+if [ ! -d ~/.gnupg ]; then
+  mkdir ~/.gnupg
+fi
+
 MATE="/Applications/TextMate.app/Contents/SharedSupport/Support/bin/mate"
 MATE_BIN="/usr/local/bin/mate"
 
@@ -82,6 +87,10 @@ curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.
 
 cd ~/.bundle
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.bundle/config
+
+cd ~/.gnupg
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gnupg/gpg-agent.conf
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gnupg/gpg.conf
 
 # If we have Sublime Text
 if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ]; then
