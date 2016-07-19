@@ -32,12 +32,11 @@ if [[ `uname` == 'Darwin' ]]; then
   eval $(ssh-agent) > /dev/null
 
   # for gpg-agent
-  [ -f ~/.gnupg/.gpg-agent-info ] && source ~/.gnupg/.gpg-agent-info
-
-  if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+  if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+    source ~/.gnupg/.gpg-agent-info
     export GPG_AGENT_INFO
   else
-    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info) > /dev/null
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
   fi
 
   # for homebrew/pear
