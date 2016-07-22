@@ -3,8 +3,7 @@
 ## Homebrew
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
-    brew install zsh git hub ssh-copy-id wget grc rbenv ruby-build \
-    rbenv-gem-rehash rbenv-bundler ctags gnupg gpg-agent pinentry-mac
+    brew install zsh git hub ssh-copy-id wget grc rbenv ruby-build ctags gnupg gpg-agent pinentry-mac
 
 ## Z shell
     chsh -s /bin/zsh
