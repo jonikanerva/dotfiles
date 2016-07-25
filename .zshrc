@@ -21,12 +21,12 @@ plugins=(heroku zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Mac
-if [[ `uname` == 'Darwin' ]]; then
+if [[ $(uname) == 'Darwin' ]]; then
   # editor
   export EDITOR=subl
 
   # for grc
-  source "`brew --prefix grc`/etc/grc.bashrc"
+  source "$(brew --prefix grc)/etc/grc.bashrc"
 
   # for gpg-agent
   if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
@@ -82,7 +82,7 @@ if [[ `uname` == 'Darwin' ]]; then
 fi
 
 # Linux
-if [[ `uname` == 'Linux' ]]; then
+if [[ $(uname) == 'Linux' ]]; then
   # editor
   export EDITOR=nano
   alias mate='nano'
