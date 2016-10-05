@@ -26,7 +26,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   export EDITOR=subl
 
   # for grc
-  source "$(brew --prefix grc)/etc/grc.bashrc"
+  source "$(brew --prefix)/etc/grc.bashrc"
 
   # for gpg-agent
   if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
