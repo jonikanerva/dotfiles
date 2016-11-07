@@ -38,7 +38,7 @@ if [[ $(uname) == 'Darwin' ]]; then
 
   # for homebrew/pear
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/pear/bin:$PATH
-  alias bu='brew update && brew upgrade --all && brew cleanup && brew doctor'
+  alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
   alias gu='yes | gem update --system -N; gem update -N && gem cleanup'
 
   # for apache
