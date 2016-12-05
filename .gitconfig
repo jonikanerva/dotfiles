@@ -48,4 +48,4 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = /usr/local/opt/gnupg/libexec/gpgbin/gpg
+	program = gpg1
