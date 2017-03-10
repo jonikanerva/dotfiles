@@ -29,6 +29,9 @@ if [[ $(uname) == 'Darwin' ]]; then
   export PATH=/usr/local/bin:/usr/local/sbin:$PATH
   alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
 
+  # for node modules
+  export PATH=$PATH:./node_modules/.bin
+
   # for mysql/maria
   alias mysql-start='mysql.server start'
   alias mysql-stop='mysql.server stop'
@@ -45,6 +48,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias s='cd ~/Sites'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias netlisteners='lsof -i -P | grep LISTEN'
+  alias static-serve='python -m SimpleHTTPServer 8000'
 fi
 
 # generate password
