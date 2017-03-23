@@ -16,6 +16,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ $(uname) == 'Darwin' ]]; then
   # editor
   export EDITOR=atom
+  alias a=$EDITOR
 
   # for gpg-agent
   if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
@@ -31,6 +32,9 @@ if [[ $(uname) == 'Darwin' ]]; then
 
   # for node modules
   export PATH=$PATH:./node_modules/.bin
+
+  # for yarn
+  export PATH=$PATH:$(yarn global bin)
 
   # for mysql/maria
   alias mysql-start='mysql.server start'
@@ -56,7 +60,6 @@ alias gp='openssl rand -base64 21'
 
 # misc
 alias pgrep='pgrep -lf'
-alias e=$EDITOR
 
 # git
 alias g='git'
