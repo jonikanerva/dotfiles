@@ -2,13 +2,13 @@
 	autocrlf = input
 	quotepath = false
 	excludesfile = ~/.gitignore
-	editor = subl -n -w
+	editor = atom --wait
 	preloadindex = true
 	precomposeunicode = true
 [user]
 	name = Joni Kanerva
-	email = joni@devlab.fi
-	signingkey = 9BAB9F57
+	email = jhonny@jhonny.org
+	signingkey = 0E51DDBF00087D5509E59CEDCF7250EFB1D491E9
 [merge]
 	tool = Kaleidoscope
 [diff]
@@ -47,5 +47,3 @@
 	helper = osxkeychain
 [commit]
 	gpgsign = true
-[gpg]
-	program = gpg1
