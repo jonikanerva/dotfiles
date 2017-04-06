@@ -40,7 +40,7 @@ git_remote_check() {
 }
 
 NAME="%{$fg[magenta]%}%n"
-MACHINE="%{$fg[yellow]%}%m"
+MACHINE="%{$fg[yellow]%}$(scutil --get ComputerName)"
 DIR="%{$fg[green]%}%~%"
 
 PROMPT='$NAME %{$reset_color%}on $MACHINE %{$reset_color%}in $DIR $(git_prompt_check)$(git_prompt_status)$(git_remote_check)
