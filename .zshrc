@@ -36,6 +36,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   # for yarn
   export PATH=$PATH:$(yarn global bin)
   alias y='yarn'
+  alias yu='yarn global upgrade'
 
   # for mysql/maria
   alias mysql-start='mysql.server start'
