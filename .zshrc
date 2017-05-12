@@ -22,6 +22,9 @@ if [[ $(uname) == 'Darwin' ]]; then
   export PATH=/usr/local/bin:/usr/local/sbin:$PATH
   alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
 
+  # for gpg
+  export GPG_TTY=$(tty)
+
   # for node modules
   export PATH=$PATH:./node_modules/.bin
 
