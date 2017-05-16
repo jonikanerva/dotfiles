@@ -28,6 +28,10 @@ if [[ $(uname) == 'Darwin' ]]; then
   # for node modules
   export PATH=$PATH:./node_modules/.bin
 
+  # for nvm
+  export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
   # for yarn
   export PATH=$PATH:$(yarn global bin)
   alias y='yarn'
