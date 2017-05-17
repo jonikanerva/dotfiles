@@ -20,6 +20,11 @@ if [[ $? != 0 ]]; then
   exit
 fi
 
+# Check .gnupg dir
+if [ ! -d ~/.gnupg ]; then
+  mkdir ~/.gnupg
+fi
+
 # Fetch oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "Getting oh-my-zsh.."
@@ -50,6 +55,9 @@ cd ~
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.zshrc
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitignore
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitconfig
+
+cd ~/.gnupg
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/gpg-agent.conf
 
 echo "Done."
 echo
