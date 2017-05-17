@@ -20,18 +20,6 @@ if [[ $? != 0 ]]; then
   exit
 fi
 
-# Check .gnupg dir
-if [ ! -d ~/.gnupg ]; then
-  mkdir ~/.gnupg
-fi
-
-SUBL="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
-SUBL_BIN="/usr/local/bin/subl"
-
-if [[ -f "${SUBL}" && ! -f "${SUBL_BIN}" ]]; then
-  ln -s "${SUBL}" "${SUBL_BIN}"
-fi
-
 # Fetch oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "Getting oh-my-zsh.."
@@ -62,10 +50,6 @@ cd ~
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.zshrc
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitignore
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitconfig
-
-cd ~/.gnupg
-curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gnupg/gpg-agent.conf
-curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gnupg/gpg.conf
 
 echo "Done."
 echo
