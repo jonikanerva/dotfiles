@@ -1,8 +1,0 @@
-TM_GIT = "/usr/local/bin/git"
-
-fontName = "Inconsolata-dz"
-fontSize = 16
-softWrap = false
-
-[ "*.{txt,md,mdown,markdown}" ]
-softWrap = true
