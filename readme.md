@@ -8,7 +8,7 @@
 ## Homebrew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
-    brew install zsh git hub ssh-copy-id wget grc rbenv ruby-build readline ctags gnupg gpg-agent pinentry-mac
+    brew install zsh git hub ssh-copy-id wget rbenv ruby-build readline gnupg gpg-agent pinentry-mac nvm node yarn
 
 ## Z shell
     chsh -s /bin/zsh
@@ -19,9 +19,14 @@
 
 ## Rbenv + gems
     rbenv install --list | grep -E "^ +\d" | tail -10
-    RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)" rbenv install 2.3.1
-    rbenv global 2.3.1
+    RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)" rbenv install 2.4.1
+    rbenv global 2.4.1
     gem update --system
     gem update
     gem cleanup
-    gem install bundler chef rails rubocop
+    gem install bundler rails rubocop
+
+## Nvm + npms
+    nvm ls-remote --lts
+    nvm install v6.11.3
+    nvm use v6.11.3
