@@ -37,6 +37,9 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias y='yarn'
   alias yu='yarn global upgrade'
 
+  # for ruby
+  if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
   # for mysql/maria
   alias mysql-start='mysql.server start'
   alias mysql-stop='mysql.server stop'
