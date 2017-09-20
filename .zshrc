@@ -57,7 +57,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias netlisteners='lsof -i -P | grep LISTEN'
   alias static-serve='python -m SimpleHTTPServer 8000'
-  alias t='trans -b fi:en'
+  alias t='trans -show-languages n -show-translation n -show-original n fi:en'
 fi
 
 # generate password
