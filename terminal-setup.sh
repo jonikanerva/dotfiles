@@ -38,7 +38,6 @@ fi
 if [ -d ~/.oh-my-zsh ]; then
   echo "Update oh-my-zsh custom.."
   cd ~/.oh-my-zsh/custom
-  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni.zsh-theme
   curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni-two.zsh-theme
   curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni.zsh
 fi
