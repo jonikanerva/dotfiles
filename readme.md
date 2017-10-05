@@ -28,5 +28,6 @@
 
 ## Nvm + npms
     nvm ls-remote --lts
-    nvm install v6.11.3
-    nvm use v6.11.3
+    nvm install v6.11.4
+    nvm use v6.11.4
+    nvm alias default v6.11.4
