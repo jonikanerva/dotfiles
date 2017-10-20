@@ -54,6 +54,7 @@ cd ~
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.zshrc
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitignore
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitconfig
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/ruby/.gemrc
 
 cd ~/.gnupg
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/gpg-agent.conf
