@@ -58,6 +58,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias netlisteners='lsof -i -P | grep LISTEN'
   alias static-serve='python -m SimpleHTTPServer 8000'
   alias t='trans -show-languages n -show-translation n -show-original n fi:en'
+  alias te='trans -show-languages n -show-translation n -show-original n en:fi'
 fi
 
 # generate password
