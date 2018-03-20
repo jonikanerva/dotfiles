@@ -38,7 +38,6 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias yu='yarn global upgrade'
 
   # for kubernetes
-  export KUBECONFIG=/keybase/team/adidas_unicorn/odp/kubeconfig/kubeconfig-unicorn-combined.yml
   alias k='kubectl'
 
   # for ruby
