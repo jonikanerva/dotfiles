@@ -39,6 +39,7 @@ if [[ $(uname) == 'Darwin' ]]; then
 
   # for kubernetes
   alias k='kubectl'
+  alias ks="echo '* deployments';  kubectl get deployment | grep configurator; echo '* pods'; kubectl get pods | grep configurator;  echo '* services'; kubectl get service | grep configurator;  echo '* ingresses'; kubectl get ing | grep configurator"
 
   # for ruby
   if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
@@ -62,7 +63,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias static-serve='python -m SimpleHTTPServer 8000'
   alias t='trans -show-languages n -show-translation n -show-original n fi:en'
   alias te='trans -show-languages n -show-translation n -show-original n en:fi'
-  alias update='echo "==> Updating Apple software" && softwareupdate --install --all && echo "\n==> Updating Homebrew packages" && brew update && brew upgrade && brew cleanup && brew doctor && echo "\n==> Updating Yarn packages" && yarn global upgrade --no-progress && echo "\n==> Updating Atom packages" && apm upgrade --no-confirm && echo'
+  alias update='echo "==> Updating Homebrew packages" && brew update && brew upgrade && brew cleanup && brew doctor && echo "\n==> Updating Yarn packages" && yarn global upgrade -s --no-progress && echo "\n==> Updating Atom packages" && apm upgrade --no-confirm && echo "\n==> Updating Apple software" && softwareupdate --install --all --restart && echo'
 fi
 
 # generate password
