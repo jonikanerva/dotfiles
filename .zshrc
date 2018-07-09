@@ -56,6 +56,9 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias ftp-start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'
   alias ftp-stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
 
+  # for docker
+  alias docker-remove-all='docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
+
   # for misc
   alias s='cd ~/Sites'
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
