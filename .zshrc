@@ -57,7 +57,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias ftp-stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
 
   # for docker
-  alias docker-remove-all='docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
+  alias docker-remove-all='docker rm $(docker ps -a -q) && docker rmi -f $(docker images -q)'
 
   # for misc
   alias s='cd ~/Sites'
