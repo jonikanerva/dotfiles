@@ -39,7 +39,7 @@ if [[ $(uname) == 'Darwin' ]]; then
 
   # for kubernetes
   alias k='kubectl'
-  alias ks="echo '* deployments';  kubectl get deployment | grep configurator; echo '* pods'; kubectl get pods | grep configurator;  echo '* services'; kubectl get service | grep configurator;  echo '* ingresses'; kubectl get ing | grep configurator"
+  alias ks="echo '* deployments';  kubectl get deployment; echo '* pods'; kubectl get pods;  echo '* services'; kubectl get service;  echo '* ingresses'; kubectl get ing"
 
   # for ruby
   if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
