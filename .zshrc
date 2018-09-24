@@ -32,6 +32,11 @@ if [[ $(uname) == 'Darwin' ]]; then
   export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
 
+  # for go
+  export GOROOT=/usr/local/opt/go/libexec
+  export GOPATH=$HOME/go
+  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
   # for yarn
   export PATH=$PATH:$(yarn global bin)
   alias y='yarn'
