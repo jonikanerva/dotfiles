@@ -72,6 +72,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias t='trans -show-languages n -show-translation n -show-original n fi:en'
   alias te='trans -show-languages n -show-translation n -show-original n en:fi'
   alias update='echo "==> Updating Homebrew packages" && brew update && brew upgrade; brew cleanup && brew doctor && echo "\n==> Updating Yarn packages" && yarn global upgrade -s --no-progress && echo "\n==> Updating Atom packages" && apm upgrade --no-confirm && echo "\n==> Updating Apple software" && softwareupdate --install --all --restart && echo'
+  alias startup-items='echo "\n~/Library/LaunchDaemons (root)\n=======================" && ls -1 /Library/LaunchDaemons && echo "\n/Library/LaunchAgents (all users)\n====================" && ls -1 /Library/LaunchAgents && echo "\n~/Library/LaunchAgents ($(whoami))\n======================" && ls -1 ~/Library/LaunchAgents'
 fi
 
 # generate password
