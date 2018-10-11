@@ -73,6 +73,11 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias te='trans -show-languages n -show-translation n -show-original n en:fi'
   alias update='echo "==> Updating Homebrew packages" && brew update && brew upgrade; brew cleanup && brew doctor && echo "\n==> Updating Yarn packages" && yarn global upgrade -s --no-progress && echo "\n==> Updating Atom packages" && apm upgrade --no-confirm && echo "\n==> Updating Apple software" && softwareupdate --install --all --restart && echo'
   alias startup-items='echo "\n/Library/LaunchDaemons (root)\n=======================" && find /Library/LaunchDaemons/* && echo "\n/Library/LaunchAgents (all users)\n====================" && find /Library/LaunchAgents/* && echo "\n~/Library/LaunchAgents ($(whoami))\n======================" && find ~/Library/LaunchAgents/* && echo'
+
+  sleep-log() {
+    DAYS=${1:-"0"}
+    pmset -g log | egrep 'UserIsActive|FullWake|Display is turned on|powerd process|\(coreaudiod\) Released PreventUserIdleSystemSleep' | egrep -B 1 'UserIsActive|FullWake|Display is turned on|powerd process' | grep $(date -v -${DAYS}d +"%Y-%m-%d"); date +%Y-%m-%d\ %H:%M.%S\ nyt;
+  }
 fi
 
 # generate password
