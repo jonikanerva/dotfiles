@@ -15,7 +15,7 @@ source $ZSH/oh-my-zsh.sh
 # Mac
 if [[ $(uname) == 'Darwin' ]]; then
   # editor
-  export EDITOR=atom
+  export EDITOR=code
   alias a=$EDITOR
 
   # for homebrew
@@ -62,7 +62,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias ftp-stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
 
   # for docker
-  alias docker-remove-all='docker rm $(docker ps -a -q) && docker rmi -f $(docker images -q)'
+  alias docker-remove-all='docker stop $(docker ps -q); docker rm $(docker ps -a -q); docker rmi -f $(docker images -q)'
 
   # for misc
   alias s='cd ~/Sites'
