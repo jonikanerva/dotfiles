@@ -20,7 +20,7 @@ if [[ $(uname) == 'Darwin' ]]; then
 
   # for homebrew
   export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-  export HOMEBREW_UPGRADE_CLEANUP=true
+  export HOMEBREW_INSTALL_CLEANUP=true
   alias bu='brew update && brew upgrade; brew doctor'
 
   # for gpg
