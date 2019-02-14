@@ -59,6 +59,9 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
   alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
+  # for dynamo
+  alias ddb="aws dynamodb --endpoint-url http://localhost:8000"
+
   # for ftp
   alias ftp-start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'
   alias ftp-stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
@@ -91,6 +94,3 @@ alias pgrep='pgrep -lf'
 # git
 alias g='git'
 alias git-clean-repo='du -sh $(pwd) && git fetch && git remote prune origin && git branch | grep -v master | grep -v "$(git symbolic-ref --short -q HEAD)" | xargs git branch -D && git gc && if [ -f Gemfile ]; then bundle clean; fi && du -sh $(pwd)'
-
-# perform
-awslogin() { perform get-aws-keys jkanerva $1 hbogo; }
