@@ -83,6 +83,12 @@ if [[ $(uname) == 'Darwin' ]]; then
     DAYS=${1:-"0"}
     pmset -g log | egrep 'UserIsActive|FullWake|Display is turned on|powerd process|\(coreaudiod\) Released PreventUserIdleSystemSleep' | egrep -B 1 'UserIsActive|FullWake|Display is turned on|powerd process' | grep $(date -v -${DAYS}d +"%Y-%m-%d"); date +%Y-%m-%d\ %H:%M.%S\ nyt;
   }
+
+  function iterm2_print_user_vars() {
+    iterm2_set_user_var kubecontext $(kubectl config current-context)
+  }
+
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 fi
 
 # generate password
