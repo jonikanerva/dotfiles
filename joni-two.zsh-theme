@@ -55,7 +55,7 @@ DIR="%{$fg[green]%}%~%"
 
 PROMPT='$NAME %{$reset_color%}on $MACHINE %{$reset_color%}in $DIR $(git_prompt_check)$(git_prompt_status)$(git_remote_check)
 %{$fg[cyan]%}$ %{$reset_color%}'
-RPROMPT='$(kube_prompt)'
+RPROMPT=''
 
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[cyan]%} ✈"
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} ✭"
