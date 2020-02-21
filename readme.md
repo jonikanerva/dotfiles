@@ -1,33 +1,34 @@
-# Installing new machine
+# Installing a new machine
 
 ## Xcode
 
-    xcode-select --install
-    sudo xcodebuild -license
+    Install Xcode from the Mac App Store.
 
 ## Homebrew
+
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
-    brew install zsh git translate-shell rbenv ruby-build readline gnupg gpg-agent pinentry-mac nvm node yarn
-
-## Z shell
-    chsh -s /bin/zsh
-    rm -f ~/.bash*
+    brew install git translate-shell gnupg pinentry-mac
 
 ## Terminal Settings
+
     curl --silent -L https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh | bash
 
 ## Rbenv + gems
+
+    brew install rbenv ruby-build readline
     rbenv install --list | grep -E "^\s*\d" | tail -5
-    rbenv install 2.4.1
-    rbenv global 2.4.1
+    rbenv install 2.7.0
+    rbenv global 2.7.0
     gem update --system
     gem update
     gem cleanup
     gem install bundler rails rubocop
 
 ## Nvm + npms
+
+    brew install nvm node yarn
     nvm ls-remote --lts | tail -5
-    nvm install v6.11.4
-    nvm use v6.11.4
-    nvm alias default v6.11.4
+    nvm install v12.16.1
+    nvm use v12.16.1
+    nvm alias default v12.16.1
