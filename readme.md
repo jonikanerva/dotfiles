@@ -6,13 +6,12 @@
 
 ## Homebrew
 
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    brew doctor
-    brew install git translate-shell gnupg pinentry-mac
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    brew doctor && brew install git translate-shell gnupg pinentry-mac
 
 ## Terminal Settings
 
-    curl --silent -L https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh | bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh)"
 
 ## Rbenv + gems
 
