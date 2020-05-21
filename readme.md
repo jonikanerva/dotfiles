@@ -13,7 +13,14 @@
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh)"
 
-## Rbenv + gems
+## Nvm + Node
+
+    brew install nvm node yarn
+    nvm install --lts
+    nvm use --lts
+    nvm alias default "lts/*"
+
+## Rbenv + Gems
 
     brew install rbenv ruby-build readline
     rbenv install --list | grep -E "^\s*\d" | tail -5
@@ -23,11 +30,3 @@
     gem update
     gem cleanup
     gem install bundler rails rubocop
-
-## Nvm + npms
-
-    brew install nvm node yarn
-    nvm ls-remote --lts | tail -5
-    nvm install v12.16.1
-    nvm use v12.16.1
-    nvm alias default v12.16.1
