@@ -19,7 +19,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias a=$EDITOR
 
   # for homebrew
-  export PATH=/opt/homebrew/bin:$PATH
+  export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
   export HOMEBREW_INSTALL_CLEANUP=true
   alias bu='brew update && brew upgrade && brew cleanup; brew doctor'
 
