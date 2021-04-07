@@ -19,7 +19,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias a=$EDITOR
 
   # for homebrew
-  export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+  export PATH=/opt/homebrew/bin:$PATH
   export HOMEBREW_INSTALL_CLEANUP=true
   alias bu='brew update && brew upgrade && brew cleanup; brew doctor'
 
@@ -31,7 +31,7 @@ if [[ $(uname) == 'Darwin' ]]; then
 
   # for nvm
   export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
+  . "/opt/homebrew/opt/nvm/nvm.sh"
   alias n='npm run-script'
 
   # for go
