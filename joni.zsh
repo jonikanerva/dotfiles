@@ -20,7 +20,7 @@ else
   TIME_DIFF=$(($CURRENT_TIME-$UPDATE_TIME))
 
   if [ $TIME_DIFF -gt 13 ]; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jonikanerva/dotfiles/main/terminal-setup.sh)"
     _update_time
   fi
 fi

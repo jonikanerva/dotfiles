@@ -6,12 +6,12 @@
 
 ## Homebrew
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew doctor && brew install git translate-shell gnupg pinentry-mac
 
 ## Terminal Settings
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jonikanerva/dotfiles/master/terminal-setup.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jonikanerva/dotfiles/main/terminal-setup.sh)"
 
 ## Nvm + Node
 

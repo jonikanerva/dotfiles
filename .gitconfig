@@ -36,7 +36,7 @@
 	pb = remote prune origin
 	nm = branch -r --no-merged
 	mm = branch -r --merged
-	ri = rebase --interactive master
+	ri = rebase --interactive main
 [difftool]
 	prompt = false
 [push]

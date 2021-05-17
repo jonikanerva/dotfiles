@@ -99,4 +99,4 @@ alias pgrep='pgrep -lf'
 
 # git
 alias g='git'
-alias git-clean-repo='du -sh $(pwd) && git fetch && git remote prune origin && git branch | grep -v master | grep -v "$(git symbolic-ref --short -q HEAD)" | xargs git branch -D && git gc && if [ -f Gemfile ]; then bundle clean; fi && du -sh $(pwd)'
+alias git-clean-repo='du -sh $(pwd) && git fetch && git remote prune origin && git branch | grep -v main | grep -v "$(git symbolic-ref --short -q HEAD)" | xargs git branch -D && git gc && if [ -f Gemfile ]; then bundle clean; fi && du -sh $(pwd)'

@@ -38,8 +38,8 @@ fi
 if [ -d ~/.oh-my-zsh ]; then
   echo "Update oh-my-zsh custom.."
   cd ~/.oh-my-zsh/custom
-  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni-two.zsh-theme
-  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/joni.zsh
+  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/joni-two.zsh-theme
+  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/joni.zsh
 fi
 
 if [ -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
@@ -51,13 +51,13 @@ fi
 echo "Getting .rc files.."
 
 cd ~
-curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.zshrc
-curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitignore
-curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/.gitconfig
-curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/ruby/.gemrc
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/.zshrc
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/.gitignore
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/.gitconfig
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/ruby/.gemrc
 
 cd ~/.gnupg
-curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/master/gpg-agent.conf
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/gpg-agent.conf
 
 echo "Done."
 echo
