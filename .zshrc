@@ -19,7 +19,8 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias a=$EDITOR
 
   # for homebrew
-  export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+  export HOMEBREW_ROOT=/opt/homebrew
+  export PATH=$HOMEBREW_ROOT/bin:$HOMEBREW_ROOT/sbin:$PATH
   export HOMEBREW_INSTALL_CLEANUP=true
   alias bu='brew update && brew upgrade && brew cleanup; brew doctor'
 
@@ -35,7 +36,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias n='npm run-script'
 
   # for go
-  export GOROOT=/usr/local/opt/go/libexec
+  export GOROOT=/opt/homebrew/opt/go/libexec
   export GOPATH=$HOME/go
   export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
@@ -56,8 +57,8 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias mysql-stop='mysql.server stop'
 
   # for postgres
-  alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-  alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+  alias pg-start='pg_ctl -D /opt/homebrew/var/postgres -l /opt/homebrew/var/postgres/server.log start'
+  alias pg-stop='pg_ctl -D /opt/homebrew/var/postgres stop -s -m fast'
 
   # for dynamo
   alias ddb="aws dynamodb --endpoint-url http://localhost:8000"
