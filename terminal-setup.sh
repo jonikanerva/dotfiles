@@ -28,11 +28,11 @@ fi
 # Fetch oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "Getting oh-my-zsh.."
-  git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh --quiet
-
+  git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh --quiet
+  
   mkdir -p ~/.oh-my-zsh/custom/plugins
   cd ~/.oh-my-zsh/custom/plugins
-  git clone git://github.com/zsh-users/zsh-syntax-highlighting.git --quiet
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git --quiet
 fi
 
 if [ -d ~/.oh-my-zsh ]; then
