@@ -15,7 +15,7 @@
 
 ## Nvm + Node
 
-    brew install nvm node yarn
+    brew install nvm node
     nvm install --lts
     nvm use --lts
     nvm alias default "lts/*"
