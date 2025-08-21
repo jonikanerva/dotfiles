@@ -73,8 +73,6 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias netlisteners='lsof -i -P | grep LISTEN'
   alias static-serve='python -m SimpleHTTPServer 8000'
-  alias t='trans -show-languages n -show-translation n -show-original n fi:en'
-  alias te='trans -show-languages n -show-translation n -show-original n en:fi'
   alias update='echo "==> Updating Homebrew packages" && brew update && brew upgrade && brew cleanup; brew doctor && echo "\n==> Updating Apple software" && softwareupdate --install --all && echo'
   alias startup-items='echo "\n/Library/LaunchDaemons (root)\n======================"; find /Library/LaunchDaemons/*; echo "\n/Library/LaunchAgents (all users)\n====================="; find /Library/LaunchAgents/*; echo "\n~/Library/LaunchAgents ($(whoami))\n======================"; find ~/Library/LaunchAgents/*; echo'
 
