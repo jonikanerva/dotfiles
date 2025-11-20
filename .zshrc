@@ -32,7 +32,8 @@ if [[ $(uname) == 'Darwin' ]]; then
 
   # for nvm
   export NVM_DIR="$HOME/.nvm"
-  . "/opt/homebrew/opt/nvm/nvm.sh"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
   # for go
   export GOROOT=/opt/homebrew/opt/go/libexec
@@ -73,7 +74,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias netlisteners='lsof -i -P | grep LISTEN'
   alias static-serve='python -m SimpleHTTPServer 8000'
-  alias update='echo "==> Updating Homebrew packages" && brew update && brew upgrade && brew cleanup; brew doctor && echo "\n==> Updating Apple software" && softwareupdate --install --all && echo "\n==> Updating Mac Appstore software" && mas upgrade --verbose && echo'
+  alias update='echo "==> Updating Homebrew packages" && brew update && brew upgrade && brew cleanup; brew doctor && echo "\n==> Updating Apple software" && softwareupdate --install --all && echo "\n==> Updating Mac Appstore software" && mas upgrade && echo'
   alias startup-items='echo "\n/Library/LaunchDaemons (root)\n======================"; find /Library/LaunchDaemons/*; echo "\n/Library/LaunchAgents (all users)\n====================="; find /Library/LaunchAgents/*; echo "\n~/Library/LaunchAgents ($(whoami))\n======================"; find ~/Library/LaunchAgents/*; echo'
 
   sleep-log() {
