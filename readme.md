@@ -15,7 +15,7 @@
 
 ## Nvm + Node
 
-    brew install nvm node
+    curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     nvm install --lts
     nvm use --lts
     nvm alias default "lts/*"
