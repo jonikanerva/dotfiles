@@ -7,7 +7,7 @@
 ## Homebrew
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew doctor && brew install git gnupg pinentry-mac
+    brew doctor && brew install git git-delta gnupg pinentry-mac
 
 ## Terminal Settings
 

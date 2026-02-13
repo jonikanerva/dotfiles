@@ -5,19 +5,11 @@
 	editor = code --wait
 	preloadindex = true
 	precomposeunicode = true
+	pager = delta
 [user]
 	name = Joni Kanerva
 	email = jhonny@jhonny.org
 	signingkey = 0E51DDBF00087D5509E59CEDCF7250EFB1D491E9
-[merge]
-	tool = Kaleidoscope
-[diff]
-	tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustexitcode = true
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [github]
 	user = jonikanerva
 [color]
@@ -30,17 +22,19 @@
 	s = status
 	b = branch
 	f = fetch
-	d = difftool
+	d = diff
 	co = checkout
 	l = log --name-status
 	pb = remote prune origin
 	nm = branch -r --no-merged
 	mm = branch -r --merged
 	ri = rebase --interactive main
-[difftool]
-	prompt = false
+[interactive]
+	diffFilter = delta --color-only
 [push]
 	default = simple
+[merge]
+	conflictStyle = zdiff3
 [mergetool]
 	keepBackup = false
 	prompt = false
@@ -49,8 +43,13 @@
 [commit]
 	gpgsign = true
 [url "git@github.com:"]
-  insteadOf = https://github.com/
+	insteadOf = https://github.com/
 [pull]
 	ff = only
 [init]
 	defaultBranch = main
+[delta]
+	navigate = true
+	dark = true
+	side-by-side = true
+	line-numbers = true
