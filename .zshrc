@@ -40,6 +40,9 @@ if [[ $(uname) == 'Darwin' ]]; then
   export GOPATH=$HOME/go
   export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+  # for rust
+  [ -s "$HOME/.cargo/env" ] && \. "$HOME/.cargo/env"
+
   # for yarn/npm
   alias y='yarn'
   alias n='npm run-script'
