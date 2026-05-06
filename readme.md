@@ -7,26 +7,12 @@
 ## Homebrew
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew doctor && brew install git git-delta gnupg pinentry-mac
+    brew doctor && brew install git git-delta gnupg pinentry-mac mise
 
 ## Terminal Settings
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jonikanerva/dotfiles/main/terminal-setup.sh)"
 
-## Nvm + Node
+## Mise
 
-    curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-    nvm install --lts
-    nvm use --lts
-    nvm alias default "lts/*"
-
-## Rbenv + Gems
-
-    brew install rbenv ruby-build readline
-    rbenv install --list | grep -E "^\s*\d" | tail -5
-    rbenv install 2.7.0
-    rbenv global 2.7.0
-    gem update --system
-    gem update
-    gem cleanup
-    gem install bundler rails rubocop
+    mise install

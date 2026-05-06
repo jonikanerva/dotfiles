@@ -1,0 +1,9 @@
+[tools]
+node = "lts"
+"npm:pnpm" = "latest"
+ruby = "latest"
+go = "latest"
+rust = "stable"
+
+[settings]
+ruby.compile = false

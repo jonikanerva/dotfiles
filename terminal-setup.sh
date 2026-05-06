@@ -25,6 +25,10 @@ if [ ! -d ~/.gnupg ]; then
   mkdir ~/.gnupg
 fi
 
+if [ ! -d ~/.config/mise ]; then
+  mkdir -p ~/.config/mise
+fi
+
 # Fetch oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "Getting oh-my-zsh.."
@@ -58,6 +62,9 @@ curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/rub
 
 cd ~/.gnupg
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/gpg-agent.conf
+
+cd ~/.config/mise
+curl --silent -o config.toml https://raw.githubusercontent.com/jonikanerva/dotfiles/main/mise/config.toml
 
 echo "Done."
 echo

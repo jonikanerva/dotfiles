@@ -30,17 +30,14 @@ if [[ $(uname) == 'Darwin' ]]; then
   # for node modules
   export PATH=$PATH:./node_modules/.bin
 
-  # for nvm
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  # for mise (manages node, pnpm, ruby, go, rust)
+  eval "$(mise activate zsh)"
 
-  # for go
-  export GOROOT=/opt/homebrew/opt/go/libexec
+  # for go (mise handles GOROOT)
   export GOPATH=$HOME/go
-  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+  export PATH=$PATH:$GOPATH/bin
 
-  # for rust
+  # for rust (cargo install binaries)
   [ -s "$HOME/.cargo/env" ] && \. "$HOME/.cargo/env"
 
   # for yarn/npm
@@ -50,9 +47,6 @@ if [[ $(uname) == 'Darwin' ]]; then
   # for kubernetes
   alias k='kubectl'
   alias ks="echo '* deployments';  kubectl get deployment; echo '* pods'; kubectl get pods;  echo '* services'; kubectl get service;  echo '* ingresses'; kubectl get ing"
-
-  # for ruby
-  if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
   # for mysql/maria
   alias mysql-start='mysql.server start'
@@ -77,7 +71,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias netlisteners='lsof -i -P | grep LISTEN'
   alias static-serve='python -m SimpleHTTPServer 8000'
-  alias update="echo '==> Updating Homebrew packages' && brew update && brew upgrade --greedy && brew cleanup; brew doctor && echo '\n==> Updating Node' && nvm install --lts --latest-npm --reinstall-packages-from=current && nvm alias default 'lts/*' && echo '==> Updating Apple software' && softwareupdate --install --all && echo '\n==> Updating Mac Appstore software' && mas upgrade"
+  alias update="echo '==> Updating Homebrew packages' && brew update && brew upgrade --greedy && brew cleanup; brew doctor && echo '\n==> Updating mise tools' && mise upgrade && mise prune --yes && echo '==> Updating Apple software' && softwareupdate --install --all && echo '\n==> Updating Mac Appstore software' && mas upgrade"
   alias startup-items='echo "\n/Library/LaunchDaemons (root)\n======================"; find /Library/LaunchDaemons/*; echo "\n/Library/LaunchAgents (all users)\n====================="; find /Library/LaunchAgents/*; echo "\n~/Library/LaunchAgents ($(whoami))\n======================"; find ~/Library/LaunchAgents/*; echo'
 
   sleep-log() {
