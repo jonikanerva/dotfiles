@@ -7,3 +7,4 @@ rust = "stable"
 
 [settings]
 ruby.compile = false
+disable_hints = ["*"]
