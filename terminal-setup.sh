@@ -64,7 +64,7 @@ cd ~/.gnupg
 curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/gpg-agent.conf
 
 cd ~/.config/mise
-curl --silent -o config.toml https://raw.githubusercontent.com/jonikanerva/dotfiles/main/mise/config.toml
+curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/mise/config.toml
 
 echo "Done."
 echo
