@@ -1,9 +1,12 @@
 [tools]
-node = "lts"
-"npm:pnpm" = "latest"
-ruby = "latest"
 go = "latest"
+node = "lts"
+python = "3.14"
+ruby = "latest"
 rust = "stable"
+uv = "latest"
+"npm:pnpm" = "latest"
+"pipx:it2" = "latest"
 
 [settings]
 ruby.compile = false
