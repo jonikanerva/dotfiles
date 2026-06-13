@@ -22,7 +22,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   export PATH=$HOMEBREW_ROOT/bin:$HOMEBREW_ROOT/sbin:$PATH
   export HOMEBREW_INSTALL_CLEANUP=true
   export HOMEBREW_NO_ENV_HINTS=1
-  alias bu='brew update && brew upgrade && brew cleanup; brew doctor'
+  alias bu='brew update && brew upgrade --greedy --yes && brew cleanup; brew doctor'
 
   # for gpg
   export GPG_TTY=$(tty)
@@ -71,7 +71,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   alias dropbox_conflicts='find ~/Dropbox -name \*conflicted\ copy\*'
   alias netlisteners='lsof -i -P | grep LISTEN'
   alias static-serve='python -m SimpleHTTPServer 8000'
-  alias update="echo '==> Updating Homebrew packages' && brew update && brew upgrade --greedy && brew cleanup; brew doctor && echo '\n==> Updating Mise tools' && mise upgrade && mise prune --yes && echo '==> Updating Apple software' && softwareupdate --install --all && echo '\n==> Updating Mac Appstore software' && mas upgrade"
+  alias update="echo '==> Updating Homebrew packages' && brew update && brew upgrade --greedy --yes && brew cleanup; brew doctor && echo '\n==> Updating Mise tools' && mise upgrade && mise prune --yes && echo '==> Updating Apple software' && softwareupdate --install --all && echo '\n==> Updating Mac Appstore software' && mas upgrade"
   alias startup-items='echo "\n/Library/LaunchDaemons (root)\n======================"; find /Library/LaunchDaemons/*; echo "\n/Library/LaunchAgents (all users)\n====================="; find /Library/LaunchAgents/*; echo "\n~/Library/LaunchAgents ($(whoami))\n======================"; find ~/Library/LaunchAgents/*; echo'
 
   sleep-log() {
