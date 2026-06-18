@@ -40,9 +40,10 @@ if [[ $(uname) == 'Darwin' ]]; then
   # for rust (cargo install binaries)
   [ -s "$HOME/.cargo/env" ] && \. "$HOME/.cargo/env"
 
-  # for yarn/npm
+  # for yarn/npm/pnpm
   alias y='yarn'
   alias n='npm run-script'
+  alias p='pnpm'
 
   # for kubernetes
   alias k='kubectl'
