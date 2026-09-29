@@ -44,6 +44,7 @@ if [ -d ~/.oh-my-zsh ]; then
   cd ~/.oh-my-zsh/custom
   curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/joni-two.zsh-theme
   curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/joni.zsh
+  curl --silent -O https://raw.githubusercontent.com/jonikanerva/dotfiles/main/startup-apps.zsh
 fi
 
 if [ -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
