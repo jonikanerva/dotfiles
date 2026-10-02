@@ -2,6 +2,7 @@
 deno = "latest"
 go = "latest"
 node = "lts"
+pnpm = "latest"
 python = "3.14"
 ruby = "latest"
 rust = "stable"
@@ -9,10 +10,12 @@ uv = "latest"
 "github:lynaghk/vibe" = "latest"
 "npm:@google/gemini-cli" = "latest"
 "npm:opencode-ai" = "latest"
-"npm:pnpm" = "latest"
 "pipx:it2" = "latest"
 "pipx:yt-dlp" = "latest"
 
 [settings]
 ruby.compile = false
 disable_hints = ["*"]
+
+[settings.npm]
+shell_out = true
