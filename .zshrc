@@ -5,7 +5,7 @@ export LANG=en_US.UTF-8
 
 # for oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="joni-two"
+ZSH_THEME="" # Teema määritellään custom/joni.zsh-tiedostossa.
 DISABLE_AUTO_TITLE=true
 COMPLETION_WAITING_DOTS=true
 DISABLE_UPDATE_PROMPT=true
@@ -95,7 +95,6 @@ alias pgrep='pgrep -lf'
 
 # git
 alias g='git'
-alias git-clean-repo='du -sh $(pwd) && git fetch && git remote prune origin && git branch | grep -v "^[*+]" | grep -v main | xargs git branch -D; git gc && if [ -f Gemfile ]; then bundle clean; fi && du -sh $(pwd)'
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
